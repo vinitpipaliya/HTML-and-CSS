@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 7</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display: grid;
+            background-color: yellow;
+            /* grid-row-gap: 9px; */
+            grid-gap: 9px 9px;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto auto;
+            width:100vw;
+            height: 90vh;
+            /* justify-content: center; */
+            /* align-content: center; */
+            grid-column: 1/3;   
+        }
+        .a{
+            background-color: red;
+            color: black;
+            border: 2px solid black;
+            
+        }
+        @media  screen and (max-width:800px){
+            body{
+                background: red;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a">1</div>
+        <div class="a">2</div>
+        <div class="a">3</div>
+        <div class="a">4</div>
+        <div class="a">5</div>
+        <div class="a">6</div>
+        <div class="a">7</div>
+        <div class="a">8</div>
+        <div class="a">9</div>
+    </div>
+</body>
+</html>

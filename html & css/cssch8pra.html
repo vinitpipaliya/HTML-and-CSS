@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8 practice</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .progress {
+            background-color: red;
+            height: 1vh;
+            animation: load 3s ease-in 1;
+            /* animation-iteration-count: */
+        }
+
+        @keyframes load {
+            0% {
+                width: 0vw;
+            }
+
+            90% {
+                width: 90vw;
+            }
+
+            100% {
+                width: 100vw;
+            }
+        }
+
+        .a {
+            background-color: rgb(34, 0, 255);
+            height: 1vh;
+            transition: opacity 3s ease-in;
+        }
+
+        .b {}
+
+        img {
+            width: 16vw;
+            height: 62vh;
+             animation: rotate 1s  infinite;
+             animation-timing-function: linear;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="progress"></div>
+    <div class="a"></div>
+    <div class="b"><img src="https://w7.pngwing.com/pngs/520/820/png-transparent-rinnegan-supreme-sharingan-uchiha-sasuke-otsusuki-naruto-naruto-shippuden-madara-obito-thumbnail.png" alt="rinegan"></div>
+</body>
+
+</html>

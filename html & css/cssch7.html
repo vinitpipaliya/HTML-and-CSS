@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7 practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        header{
+         
+            background-color: black;
+            
+        }
+        ul{ 
+            display: inline-grid;
+            grid-template-columns: auto auto auto;
+        }
+        .a{
+            color: aqua;
+            list-style: none;
+            margin: 0 29px;
+            padding: 22px 0;
+        }
+        .container{
+            display: inline-grid;
+            grid-template-columns: auto auto;
+            justify-content:space-between;
+            background-color: yellow;
+            width: 100vw;
+            height: 80vh;
+        }
+        .b{
+            background-color: red;
+            width: 30vw;
+            height: 50vh;
+        }
+        .c{
+            background-color: blue;
+            width: 30vw;
+            height: 50vh;
+        }
+        @media  screen and (max-width:800px){
+            body{
+                background: red;
+            }
+        }
+        @media  screen and (max-width:600px){
+            body{
+                background: rgb(74, 229, 180);
+            }
+        }
+        @media  screen and (max-width:400px){
+            body{
+                background: rgb(231, 50, 174);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li class="a">home</li>
+                <li class="a">about</li>
+                <li class="a">contact</li>  
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+</body>
+</html>

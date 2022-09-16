@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chapter 8</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .a {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .b {
+            background-color: red;
+            color: antiquewhite;
+            width: 50vw;
+            height: 10vh;
+            border: 2px solid yellow;
+            /* transform: translate(61px, 60px); */
+            /* transform:rotate(20deg); */
+            /* transform:scaleX(20); */
+            /* transform:scaley(20); */
+            /* transform: scale(4,4); */
+            /* transform:skew(10deg,10deg); */
+            /* transform: matrix(); */
+        }
+        img{
+            width: 446px;
+            height: 455px;
+            /* transition-property: width;
+            transition-delay: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s; */
+            transition: width 1s ease-in 1s;
+        }
+        .c{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: vinit;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+        }
+        @keyframes vinit{
+            from{
+                width: 30px;
+                height: 30px;
+            }
+            to{
+                width: 190px;
+                height: 190px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">
+        <!-- <div class="b"><img id="myimage"src="https://images.unsplash.com/photo-1619115445441-d6e75309000d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <button id="btn">Toggle</button> -->
+        <div class="c"></div>
+
+    </div>
+</body>
+<!-- <script>
+    myimage.style.width='446px';
+    myimage.style.height='46px';
+    btn.addEventListner("click",()=>{
+        muimage.style.height='456px';
+        if(myimage.style.width==='456px'){
+            myimage.style.width='146px';
+        }
+        else if(myimage.style.width==='146px'){
+            myimage.style.width='546px';
+        }
+    })
+</script> -->
+</html>

@@ -1,0 +1,25 @@
+.size{
+
+    color: rgba(0, 166, 255, 0.413);
+    font-size:20px;
+}
+.krishna{
+    height : 720px;
+    width : 720px;
+}  
+.a{
+    width:100%;
+    float:left;
+}      
+.b{
+    width:25%
+}
+.c{
+    color: #477763;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.d{
+    color: aqua;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
